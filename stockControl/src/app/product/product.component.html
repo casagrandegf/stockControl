@@ -1,0 +1,30 @@
+
+
+
+<div class="container">
+  <div  class="row" >
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="product-name"> Produto (s) </th>
+            <th scope="col" class="product-quantity"> Quantidade </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <!-- <th scope="row">{{ i + 1 }}</th> -->
+            <td>
+              {{ product.prod_name }}
+            </td>
+            <td>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary inline" (click)="subtractProduct(product)" [disabled]="product.disabled"> - </button>
+                <div class="btn inline quantity"> {{ product.prod_quantity }}</div>
+                <button type="button" class="btn btn-secondary inline" (click)="addProduct(product)"> + </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table> 
+    </div>
+  </div>

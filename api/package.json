@@ -1,0 +1,16 @@
+{
+  "name": "stock-control-api",
+  "version": "1.0.0",
+  "description": "a simple stock control",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Fernando Casagrande",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-load": "^1.1.16",
+    "mysql": "^2.16.0"
+  }
+}

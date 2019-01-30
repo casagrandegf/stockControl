@@ -1,0 +1,15 @@
+
+.product-quantity {
+  width: 40%;
+}
+
+.product-name {
+  width: 60%;
+}
+
+.inline {
+  display: inline-block;
+}
+.quantity {
+  background-color: #eeee;
+}
